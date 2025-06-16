@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DocenteRepository extends CrudRepository<Docente, Integer> {
+	boolean existsByTipoDocAndNumeroIdentificacion(String tipoDoc, String numeroIdentificacion);
+
 }
